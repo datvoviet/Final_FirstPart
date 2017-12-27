@@ -46,6 +46,81 @@
       },
       "oauth_client": [
         {
+          "client_id": "179209881472-fa90magupsaqsglufm1cn76vql3d5uhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pc.final_firstpart",
+            "certificate_hash": "5a2a0c225cc9af832fbe8a44cc8c058c50c19e4b"
+          }
+        },
+        {
+          "client_id": "179209881472-6bc5odqkdcahm1p5lbdn22f4nlem1tc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6d4wsDothbdU-awDV9IRuNkTrWBWAquc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179209881472-6bc5odqkdcahm1p5lbdn22f4nlem1tc7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179209881472:android:c3b9ce81434cec43",
+        "android_client_info": {
+          "package_name": "com.example.pc.registerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179209881472-6bc5odqkdcahm1p5lbdn22f4nlem1tc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6d4wsDothbdU-awDV9IRuNkTrWBWAquc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179209881472:android:aac1e3c4af4cc549",
+        "android_client_info": {
+          "package_name": "com.example.pc.signin"
+        }
+      },
+      "oauth_client": [
+        {
           "client_id": "179209881472-6bc5odqkdcahm1p5lbdn22f4nlem1tc7.apps.googleusercontent.com",
           "client_type": 3
         }

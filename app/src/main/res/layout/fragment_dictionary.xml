@@ -4,33 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:padding="20dp"
     android:orientation="vertical"
     tools:context="com.example.pc.final_firstpart.DictionaryFragment">
 
     <SearchView
-        android:layout_marginTop="100dp"
+        android:background="@drawable/gradientbackground"
+        android:layout_marginTop="95dp"
         android:id="@+id/searchView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></SearchView>
+        android:layout_height="wrap_content">
+
+    </SearchView>
 
     <ListView
         android:id="@+id/wordListView"
         android:layout_width="match_parent"
-        android:layout_height="100dp"></ListView>
+        android:layout_height="60dp"></ListView>
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/defTextView"
-            android:textSize="20sp"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="No definition to show"/>
+            android:layout_height="wrap_content">
 
+            <EditText
+                android:layout_marginTop="30dp"
+                android:id="@+id/defEditText"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="No definition to show"/>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_launcher"/>
+
+        </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
 
