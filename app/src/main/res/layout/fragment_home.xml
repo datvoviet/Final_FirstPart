@@ -9,7 +9,7 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,32 +21,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="175dp">
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:background="@drawable/gradientbackground"
                     android:layout_width="match_parent"
                     android:layout_height="175dp"
                     android:orientation="vertical">
                     <ImageView
+
+                        android:src="@drawable/ic_profile_picture"
                         android:id="@+id/avatarImageView"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:layout_gravity="center_horizontal"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:clickable="true"
-                        android:background="@color/graylight"/>
+                        android:background="@drawable/curved_border"/>
                     <TextView
                         android:id="@+id/nameTextView"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Your name"
+                        android:layout_marginTop="8dp"
                         android:textColor="#fff"
                         android:textStyle="bold"
                         android:textSize="20sp"
+                        android:fontFamily="monospace"
                         />
                 </LinearLayout>
 
                 <ProgressBar
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="50dp"
                     android:layout_gravity="center_horizontal"
                     android:id="@+id/hprogressBar"
                     style="?android:attr/progressBarStyle"
@@ -61,6 +66,7 @@
 
                 <Button
                     android:layout_weight="1"
+                    android:fontFamily="monospace"
                     android:id="@+id/editProfileButton"
                     android:text="Edit profile"
                     android:layout_gravity="center_horizontal"
@@ -68,6 +74,7 @@
                     android:layout_height="wrap_content" />
 
                 <Button
+                    android:fontFamily="monospace"
                     android:layout_weight="1"
                     android:id="@+id/logOutButton"
                     android:text="Log out"
@@ -75,55 +82,118 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
-
-            <TextView
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/emailTextView"
-                android:textSize="20sp"
-                android:fontFamily="monospace"
-                android:text="Email:"
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:id="@+id/dobTextView"
-                android:textSize="20sp"
-                android:fontFamily="monospace"
-                android:text="DOB:"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-            <TextView
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:id="@+id/phoneTextView"
-                android:textSize="20sp"
-                android:fontFamily="monospace"
-                android:text="Phone:"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
 
-            <TextView
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:id="@+id/workTextView"
-                android:textSize="20sp"
-                android:fontFamily="monospace"
-                android:text="Work at:"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                        android:layout_marginTop="10dp"
+
+                        android:textSize="20sp"
+                        android:fontFamily="monospace"
+                        android:text="Email:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+
+
+                        android:textSize="20sp"
+                        android:fontFamily="monospace"
+                        android:text="DOB:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+
+
+                        android:textSize="20sp"
+                        android:fontFamily="monospace"
+                        android:text="Phone:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+
+
+                        android:textSize="20sp"
+                        android:fontFamily="monospace"
+                        android:text="Work at:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="11dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/emailTextView"
+                        android:textSize="18sp"
+                        android:fontFamily="monospace"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="12dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/dobTextView"
+                        android:textSize="18sp"
+                        android:fontFamily="monospace"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="11dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/phoneTextView"
+                        android:textSize="18sp"
+                        android:fontFamily="monospace"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+
+                        android:textStyle="bold"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="13dp"
+                        android:layout_marginStart="5dp"
+                        android:id="@+id/workTextView"
+                        android:textSize="18sp"
+                        android:fontFamily="monospace"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
 
 
             <ImageView

@@ -32,6 +32,8 @@ dependencies {
     compile 'com.google.firebase:firebase-database:11.8.0'
     compile 'com.google.android.gms:play-services-auth:11.8.0'
 
+    implementation files('libs/picasso-2.5.2.jar')
+
 }
 
 apply plugin: 'com.google.gms.google-services'

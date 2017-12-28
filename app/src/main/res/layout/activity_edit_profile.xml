@@ -21,7 +21,7 @@
             <TextView
                 android:id="@+id/epBackTextView"
                 android:text="Back"
-                android:textSize="15sp"
+                android:textSize="19sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onBack"/>
